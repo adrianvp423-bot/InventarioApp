@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Inventory crate / isometric box silhouette centered inside 66dp safe zone (coords ~26..82) -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M54,28 L77,39.5 L54,51 L31,39.5 Z" />
+    <path
+        android:fillColor="#FFE0F2F1"
+        android:pathData="M31,42.5 L52.5,53.2 L52.5,79 L31,68.3 Z" />
+    <path
+        android:fillColor="#FFB2DFDB"
+        android:pathData="M77,42.5 L55.5,53.2 L55.5,79 L77,68.3 Z" />
+    <!-- Seal tape accent on top face -->
+    <path
+        android:fillColor="#FF00695C"
+        android:pathData="M49.5,30.2 L58.5,34.7 L44.5,41.7 L35.5,37.2 Z" />
+</vector>

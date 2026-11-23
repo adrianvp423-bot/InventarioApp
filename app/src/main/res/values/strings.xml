@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InventarioApp</string>
+    <string name="firebase_web_client_id" translatable="false">1007162019093-jt0eo99flqqtaie9bkshhgq2caa38drh.apps.googleusercontent.com</string>
+    <string name="firestore_database_id" translatable="false">ai-studio-dummyjson-6570ba0d-c927-41ec-bade-cb428faeb275</string>
+</resources>

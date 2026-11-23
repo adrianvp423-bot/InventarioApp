@@ -1,0 +1,5 @@
+{
+  "name": "Dummy Store",
+  "description": "Catálogo y gestión de productos conectado a DummyJSON API (listar, ver detalle, crear, editar y eliminar productos).",
+  "requestFramePermissions": []
+}
