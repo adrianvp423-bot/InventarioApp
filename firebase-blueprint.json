@@ -1,0 +1,61 @@
+{
+  "entities": {
+    "Product": {
+      "title": "Product",
+      "description": "Inventory product stored per authenticated user with tombstone support for offline-first sync.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Stable UUID or slug identifier matching the Firestore document ID.",
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Product name.",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional product description.",
+          "maxLength": 500
+        },
+        "priceCop": {
+          "type": "integer",
+          "description": "Unit price in Colombian Pesos (COP), must be positive."
+        },
+        "quantity": {
+          "type": "integer",
+          "description": "Stock quantity, zero or positive integer."
+        },
+        "updatedAt": {
+          "type": "integer",
+          "description": "Last modification epoch timestamp in milliseconds."
+        },
+        "isDeleted": {
+          "type": "boolean",
+          "description": "Tombstone flag indicating logical deletion for offline sync."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "description",
+        "priceCop",
+        "quantity",
+        "updatedAt",
+        "isDeleted"
+      ]
+    }
+  },
+  "firestore": {
+    "/users/{uid}/products/{productId}": {
+      "schema": {
+        "$ref": "#/entities/Product"
+      },
+      "description": "User-scoped inventory products collection for offline-first Room/localStorage and Firestore synchronization."
+    }
+  }
+}
